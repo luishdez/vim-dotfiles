@@ -1,4 +1,3 @@
- " Categories are found by :options
 " important {{{
 "}}}
 " moving around, searching and patterns {{{
@@ -96,6 +95,7 @@ if has('mksession')
 	set viewoptions=cursor,folds
 endif
 "}}}
+" {{{ terminal color
 if $TERM ==# 'xterm-256color'
 	set t_Co=256
 elseif $TERM ==# 'screen-256color'
@@ -103,3 +103,4 @@ elseif $TERM ==# 'screen-256color'
 else
 	set t_Co=16
 endif
+" }}}
