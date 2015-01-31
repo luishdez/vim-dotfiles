@@ -1,0 +1,21 @@
+" Source minimal settings
+if has('vim_starting')
+  execute 'source' expand('~/.vimrc.minimal')
+endif
+
+" Below makes vim feature-rich, but heavy
+source ~/.vim/vimrc/functions.vim
+source ~/.vim/vimrc/commands.vim
+source ~/.vim/vimrc/autocmds.vim
+source ~/.vim/vimrc/mappings.vim
+source ~/.vim/vimrc/highlights.vim
+
+source ~/.vim/neobundle.vim
+
+source ~/.vim/vimrc/options.vim
+
+" Call NeoBundle hooks on reloading vimrc
+if !has('vim_starting')
+  call neobundle#call_hook('on_source')
+  call neobundle#call_hook('on_post_source')
+endif

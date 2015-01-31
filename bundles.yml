@@ -1,0 +1,645 @@
+---
+# Libraries {{{
+- mattn/webapi-vim:
+    lazy: 1
+    autoload:
+        function_prefix: webapi
+        on_source:
+            - gist-vim
+- xolox/vim-misc:
+    lazy: 1
+    autoload:
+        on_source:
+            - vim-reload
+- rizzatti/funcoo.vim:
+    lazy: 1
+    autoload:
+        on_source:
+            - dash.vim
+# }}}
+
+# It just works (No need to invoke consciously, just configure.) {{{
+- tpope/vim-endwise:
+    lazy: 1
+    autoload:
+        insert: 1
+- tpope/vim-repeat:
+- tpope/vim-sleuth:
+- Raimondi/delimitMate:
+    lazy: 1
+    autoload:
+        insert: 1
+- MarcWeber/vim-addon-local-vimrc:
+- Shougo/vimproc:
+    build:
+        mac: make -f make_mac.mak
+        unix: make -f make_unix.mak
+- vim-scripts/sudo.vim:
+- chrisbra/Recover.vim:
+- tpope/vim-speeddating:
+- osyo-manga/shabadou.vim:
+# - takac/vim-hardtime:
+- kana/vim-submode:
+- amdt/vim-niji:
+# }}}
+
+# Coding {{{
+- erryma/vim-multiple-cursors:
+- tpope/vim-scriptease:
+- Shougo/neosnippet:
+    lazy: 1
+    autoload:
+        insert: 1
+        commands:
+            - NeoSnippetMakeCache
+            - NeoSnippetEdit
+            - NeoSnippetSource
+            - NeoSnippetClearMarkers
+- Shougo/neosnippet-snippets:
+    lazy: 1
+    autoload:
+        on_source: neosnippet
+- honza/vim-snippets:
+    lazy: 1
+    autoload:
+        function_prefix: vim_snippets
+- ujihisa/quicklearn:
+- thinca/vim-qfreplace:
+- AndrewRadev/linediff.vim:
+- AndrewRadev/sideways.vim:
+- sjl/gundo.vim:
+    lazy: 1
+    autoload:
+        commands:
+            - GundoShow
+- vim-scripts/UnconditionalPaste:
+- godlygeek/tabular:
+    lazy: 1
+    autoload:
+        commands:
+            - Tabularize
+- t9md/vim-textmanip:
+- AndrewRadev/splitjoin.vim:
+    lazy: 1
+    autoload:
+        commands:
+            - SplitjoinSplit
+            - SplitjoinJoin
+- AndrewRadev/switch.vim:
+    lazy: 1
+    autoload:
+        commands:
+            - Switch
+- tpope/vim-abolish:
+- tpope/vim-surround:
+- scrooloose/nerdcommenter:
+- AndrewRadev/inline_edit.vim:
+- sk1418/Join:
+    lazy: 1
+    autoload:
+        commands:
+            - Join
+- tommcdo/vim-exchange:
+- scrooloose/syntastic:
+    lazy: 1
+    autoload:
+        commands:
+            - SyntasticCheck
+
+## Completion {{{
+- Shougo/neocomplete:
+    lazy: 1
+    autoload:
+        insert: 1
+- ujihisa/neco-look:
+    lazy: 1
+    autoload:
+        insert: 1
+- wellle/tmux-complete.vim:
+    lazy: 1
+    autoload:
+        insert: 1
+- Wolfy87/vim-expand:
+    lazy: 1
+    autoload:
+        commands:
+            - Expand
+## }}}
+
+# }}}
+
+# Navigation {{{
+- majutsushi/tagbar:
+- Shougo/vimfiler:
+    lazy: 1
+    autoload:
+        commands:
+            - VimFiler
+            - VimFilerBufferDir
+            - VimFilerCurrentDir
+            - VimFilerDouble
+            - VimFilerExplorer
+        explorer: 1
+- tpope/vim-unimpaired:
+- rking/ag.vim:
+    lazy: 1
+    autoload:
+        commands:
+            - Ag
+            - LAg
+- vim-scripts/matchit.zip:
+- wellle/targets.vim:
+# }}}
+
+# Debugging {{{
+- mattboehm/vim-unstack:
+    lazy: 1
+# }}}
+
+# Reference {{{
+- rizzatti/dash.vim:
+- thinca/vim-ref:
+    lazy: 1
+    autoload:
+        commands:
+            - Ref
+- taka84u9/vim-ref-ri:
+- yuratomo/w3m.vim:
+    lazy: 1
+    autoload:
+        commands:
+            - W3m
+# }}}
+
+# Unite {{{
+- Shougo/unite.vim:
+# don't make it lazy so that neomru can register files
+- Shougo/neomru.vim:
+- h1mesuke/unite-outline:
+    lazy: 1
+    autoload:
+        unite_sources:
+            - outline
+- tsukkee/unite-help:
+    lazy: 1
+    autoload:
+        unite_sources:
+            - help
+- ujihisa/unite-rake:
+    lazy: 1
+    autoload:
+        unite_sources:
+            - rake
+- tsukkee/unite-tag:
+    lazy: 1
+    autoload:
+        unite_sources:
+            - tag
+            - tag/file
+            - tag/include
+- yuku-t/unite-git:
+    lazy: 1
+    autoload:
+        unite_sources:
+            - git_cached
+            - git_modified
+            - git_untracked
+- tacroe/unite-mark:
+    lazy: 1
+    autoload:
+        unite_sources:
+            - mark
+- basyura/unite-rails:
+    lazy: 1
+    autoload:
+        unite_sources:
+            - rails/asset
+            - rails/bundle
+            - rails/bundled_gem
+            - rails/config
+            - rails/controller
+            - rails/db
+            - rails/destroy
+            - rails/features
+            - rails/gem
+            - rails/gemfile
+            - rails/generate
+            - rails/git
+            - rails/helper
+            - rails/heroku
+            - rails/initializer
+            - rails/javascript
+            - rails/lib
+            - rails/log
+            - rails/mailer
+            - rails/model
+            - rails/rake
+            - rails/route
+            - rails/schema
+            - rails/spec
+            - rails/stylesheet
+            - rails/view
+- mfumi/unite-compiler:
+    lazy: 1
+    autoload:
+        unite_sources:
+            - compiler
+- thinca/vim-unite-history:
+    lazy: 1
+    autoload:
+        unite_sources:
+            - history/command
+            - history/search
+            - history/yank
+- osyo-manga/unite-quickfix:
+    lazy: 1
+    autoload:
+        unite_sources:
+            - quickfix
+            - location_list
+- Genki-S/vim-unite-giti:
+    lazy: 1
+    autoload:
+        unite_sources:
+            - giti
+            - giti/branch
+            - giti/branch_all
+            - giti/config
+            - giti/log
+            - giti/remote
+            - giti/status
+- osyo-manga/shabadou.vim:
+- haya14busa/unite-ghq:
+    lazy: 1
+    autoload:
+        unite_sources:
+            - ghq
+# }}}
+
+# Git {{{
+- sjl/splice.vim:
+- tpope/vim-fugitive:
+- tommcdo/vim-fugitive-blame-ext:
+    lazy: 1
+    autoload:
+        filename_patterns:
+            - .*fugitiveblame
+- int3/vim-extradite:
+- gregsexton/gitv:
+    lazy: 1
+    autoload:
+        commands:
+            - Gitv
+- tpope/vim-git:
+# }}}
+
+# Visual {{{
+- chriskempson/base16-vim:
+- mhinz/vim-signify:
+- t9md/vim-quickhl:
+- itchyny/lightline.vim:
+- kshenoy/vim-signature:
+- Yggdroot/indentLine:
+- mattboehm/vim-accordion:
+    lazy: 1
+    autoload:
+        commands:
+            - Accordion
+            - AccordionDiff
+- jceb/vim-hier:
+    lazy: 1
+    autoload:
+        commands:
+            - HierStart
+            - HierStop
+            - HierUpdate
+            - HierClear
+# }}}
+
+# Operators {{{
+- kana/vim-operator-user:
+- tyru/operator-camelize.vim:
+- tek/vim-operator-assign:
+- kana/vim-operator-replace:
+# }}}
+
+# Text Objects {{{
+- kana/vim-textobj-user:
+- kana/vim-textobj-entire:
+- kana/vim-textobj-function:
+- kana/vim-textobj-datetime:
+- kana/vim-textobj-indent:
+- kana/vim-textobj-fold:
+- kana/vim-textobj-line:
+- thinca/vim-textobj-comment:
+- thinca/vim-textobj-between:
+- lucapette/vim-textobj-underscore:
+- coderifous/textobj-word-column.vim:
+- nelstrom/vim-textobj-rubyblock:
+- bootleq/vim-textobj-rubysymbol:
+- deris/vim-textobj-enclosedsyntax:
+- Julian/vim-textobj-variable-segment:
+- osyo-manga/vim-textobj-blockwise:
+# }}}
+
+# Writing {{{
+- beloglazov/vim-online-thesaurus:
+    lazy: 1
+    autoload:
+        commands:
+            - OnlineThesaurusCurrentWord
+            - Thesaurus
+- mikewest/vimroom:
+    lazy: 1
+    autoload:
+        commands:
+            - VimroomToggle
+# }}}
+
+# Other Utilities {{{
+- MattesGroeger/vim-bookmarks:
+- mattn/gist-vim:
+    lazy: 1
+    autoload:
+        commands:
+            - Gist
+- kana/vim-fakeclip:
+- vim-scripts/TwitVim:
+- thinca/vim-quickrun:
+- fuenor/qfixhowm:
+    lazy: 1
+    autoload:
+        function_prefix: qfixmemo
+- sjl/clam.vim:
+- gregsexton/VimCalc:
+    lazy: 1
+    autoload:
+        commands:
+            - Calc
+- jpalardy/vim-slime:
+    lazy: 1
+    autoload:
+        commands:
+            - SlimeConfig
+- benmills/vimux:
+    lazy: 1
+    autoload:
+        commands:
+            - VimuxBufferDir
+- tyru/vim-altercmd:
+- kana/vim-fakeclip:
+- tyru/open-browser.vim:
+- szw/vim-ctrlspace:
+    lazy: 1
+    autoload:
+        commands:
+            - CtrlSpace
+# obsession resumes recording after restoring session, so don't make this lazy
+- tpope/vim-obsession:
+- tpope/vim-dispatch:
+- Shougo/junkfile.vim:
+    lazy: 1
+    autoload:
+        commands:
+            - JunkfileOpen
+        unite_sources:
+            - junkfile
+            - junkfile/new
+- mhinz/vim-startify:
+- mhinz/vim-randomtag:
+- tpope/vim-capslock:
+    lazy: 1
+    autoload:
+        mappings:
+            - <Plug>CapsLockToggle
+# }}}
+
+# Filetype Specific {{{
+
+## Ruby {{{
+- vim-ruby/vim-ruby:
+    lazy: 1
+    autoload:
+        filetypes:
+            - ruby
+- tpope/vim-rails:
+# - tpope/vim-rake:
+    # lazy: 1
+    # autoload:
+        # filetypes:
+            # - ruby
+- tpope/vim-bundler:
+    lazy: 1
+    autoload:
+        filetypes:
+            - ruby
+- ngmy/vim-rubocop:
+    lazy: 1
+    autoload:
+        commands:
+            - RuboCop
+- thoughtbot/vim-rspec:
+    lazy: 1
+    autoload:
+        filetypes:
+            - ruby
+## }}}
+
+## Go {{{
+- jnwhiteh/vim-golang:
+    lazy: 1
+    autoload:
+        filetypes:
+            - go
+## }}}
+
+## Vim {{{
+- xolox/vim-reload:
+    depends:
+        - vim-misc
+    lazy: 1
+    autoload:
+        filetypes:
+            - vim
+## }}}
+
+## Web Development {{{
+- hail2u/vim-css3-syntax:
+    lazy: 1
+    autoload:
+        filetypes:
+            - css
+            - scss
+            - sass
+            - less
+- ap/vim-css-color:
+    lazy: 1
+    autoload:
+        filetypes:
+            - css
+            - scss
+            - sass
+            - less
+- pangloss/vim-javascript:
+    lazy: 1
+    autoload:
+        filetypes:
+            - javascript
+            - coffee
+- lfilho/cosco.vim:
+    lazy: 1
+    autoload:
+        filetypes:
+            - javascript
+            - css
+            - scss
+            - sass
+            - less
+- mattn/emmet-vim:
+    lazy: 1
+    autoload:
+        filetypes:
+            - html
+            - erb
+            - haml
+            - css
+            - scss
+            - sass
+            - less
+- miripiruni/CSScomb-for-Vim:
+    lazy: 1
+    autoload:
+        filetypes:
+            - css
+            - scss
+            - sass
+            - less
+- kchmck/vim-coffee-script:
+    lazy: 1
+    autoload:
+        filetypes:
+            - coffee
+- cakebaker/scss-syntax.vim:
+    lazy: 1
+    autoload:
+        filetypes:
+            - scss
+- luishdez/vim-less:
+    lazy: 1
+    autoload:
+        filetypes:
+            - less
+- othree/html5.vim:
+    lazy: 1
+    autoload:
+        filetypes:
+            - html
+- hokaccha/vim-html5validator:
+    lazy: 1
+    autoload:
+        filetypes:
+            - html
+- Valloric/MatchTagAlways:
+    lazy: 1
+    autoload:
+        filetypes:
+            - html
+            - xml
+- tpope/vim-haml:
+    lazy: 1
+    autoload:
+        filetypes:
+            - haml
+- mustache/vim-mustache-handlebars:
+    lazy: 1
+    autoload:
+        filetypes:
+            - hbs
+- evidens/vim-twig:
+    lazy: 1
+    autoload:
+        filetypes:
+            - twig
+- tpope/vim-jdaddy:
+    lazy: 1
+    autoload:
+        filetypes:
+            - json
+- elzr/vim-json:
+    lazy: 1
+    autoload:
+        filetypes:
+            - json
+## }}}
+
+## Scheme {{{
+- aharisu/vim_goshrepl:
+    lazy: 1
+    autoload:
+        commands:
+            - GoshREPL
+# }}}
+
+## Swift {{{
+- toyamarinyon/vim-swift:
+# }}}
+
+## Others {{{
+- kannokanno/previm:
+    lazy: 1
+    autoload:
+        filetypes:
+            - markdown
+- LaTeX-Box-Team/LaTeX-Box:
+    lazy: 1
+    autoload:
+        filetypes:
+            - tex
+- derekwyatt/vim-scala:
+    lazy: 1
+    autoload:
+        filetypes:
+            - scala
+- chrisbra/csv.vim:
+    lazy: 1
+    autoload:
+        filetypes:
+            - csv
+- vim-scripts/scilab.vim:
+    lazy: 1
+    autoload:
+        filetypes:
+            - scilab
+- aklt/plantuml-syntax:
+    lazy: 1
+    autoload:
+        filetypes:
+            - plantuml
+- tmux-plugins/vim-tmux:
+## }}}
+
+# }}}
+
+# Vim Scripting {{{
+- thinca/vim-prettyprint:
+    lazy: 1
+    autoload:
+        commands:
+            - PrettyPrint
+            - PP
+        functions:
+            - PrettyPrint
+            - PP
+# }}}
+
+# Manual Plugins {{{
+- migemo:
+    type: nosync
+    base: ~/.vim/bundles/manual
+    lazy: 1
+    autoload:
+        commands:
+            Migemo
+# }}}
+
+# vim: iskeyword+=/,.,- foldmethod=marker

@@ -1,0 +1,9 @@
+" US keyboard settings {{{
+" Change Leader
+let mapleader = ','
+
+set t_Co=256
+set linespace=2
+set background=dark
+
+command! Custom execute 'source' expand('~/.vimrc')

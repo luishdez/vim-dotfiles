@@ -1,0 +1,31 @@
+include markdown.snip
+
+snippet img
+	![${1:caption}][${2:refname}]
+	[$2]: ${3:filename}
+
+snippet lst
+	<!-- \lstinputlisting[language=${1},caption=${2},label=lst:${3}]{${4:filename}} -->
+
+snippet ilst
+	<!--
+	\begin{lstlisting}[language=${1},caption=${2},label=lst:${3}]
+	${0}
+	\end{lstlisting}
+	-->
+
+snippet imath
+	<!-- $${0}$ -->
+
+snippet math
+	<!--
+	\[
+		${0}
+	\]
+	-->
+
+snippet cite
+	[${1:p. xx}][#${2:AuthorYear}]${0}
+
+snippet ref
+	[#${1:AuthorYear}]: ${2:Author}. *${3:Title}*. ${4:Pub}, ${5:Year}.${0}
