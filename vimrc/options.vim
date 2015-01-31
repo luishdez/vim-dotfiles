@@ -71,7 +71,7 @@ set autoread
 set cryptmethod=blowfish
 "}}}
 " the swap file {{{
-set swapfile
+set noswapfile
 "}}}
 " command line editing {{{
 set history=200
