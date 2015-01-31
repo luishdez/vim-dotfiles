@@ -441,6 +441,14 @@
             - ruby
 ## }}}
 
+## {{{ # PHP
+- shawncplus/phpcomplete.vim:
+    lazy: 1
+    autoload:
+        filetypes:
+            - php
+## }}}
+
 ## Go {{{
 - jnwhiteh/vim-golang:
     lazy: 1
