@@ -101,10 +101,6 @@
             - Join
 - tommcdo/vim-exchange:
 - scrooloose/syntastic:
-    lazy: 1
-    autoload:
-        commands:
-            - SyntasticCheck
 
 ## Completion {{{
 - Shougo/neocomplete:
@@ -297,7 +293,7 @@
 - chriskempson/base16-vim:
 - mhinz/vim-signify:
 - t9md/vim-quickhl:
-- itchyny/lightline.vim:
+- bling/vim-airline:
 - kshenoy/vim-signature:
 - Yggdroot/indentLine:
 - mattboehm/vim-accordion:
