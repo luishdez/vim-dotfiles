@@ -6,5 +6,5 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" Match 80 Rule characters
-set colorcolumn= 80
+" Set ruler at 80
+set colorcolumn=80
