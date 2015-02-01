@@ -101,6 +101,7 @@
             - Join
 - tommcdo/vim-exchange:
 - scrooloose/syntastic:
+- ntpeters/vim-better-whitespace:
 
 ## Completion {{{
 - Shougo/neocomplete:
