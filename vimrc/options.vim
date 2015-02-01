@@ -11,7 +11,9 @@ set tags=.git/tags,../../.git/tags,.hg/tags,./tags,.tags;
 "}}}
 " displaying text {{{
 set scrolloff=3
-set wrap
+set nowrap
+set wm=2
+set tw=80
 set display=lastline
 set list
 set listchars=tab:>\ ,trail:_,extends:>,precedes:<,conceal:#

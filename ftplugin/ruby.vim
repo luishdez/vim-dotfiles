@@ -35,6 +35,7 @@ endfunction
 " setlocal foldexpr=RubyMethodFold(v:lnum)
 setlocal foldmethod=syntax
 setlocal foldlevel=1
+setlocal nowrap
 
 inoremap <silent> <buffer> <Leader><C-l> <Space>=><Space>
 
