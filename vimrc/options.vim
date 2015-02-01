@@ -7,6 +7,7 @@ set ignorecase
 set smartcase
 "}}}
 " tags {{{
+set tags=.git/tags,./tags,tags
 "}}}
 " displaying text {{{
 set scrolloff=3
