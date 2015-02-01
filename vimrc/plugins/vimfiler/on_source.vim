@@ -1,6 +1,7 @@
 let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_force_overwrite_statusline = 0
 let g:vimfiler_safe_mode_by_defaul = 0
+let g:vimfiler_ignore_pattern = '^\%(\.tmp\|\.git\|\.DS_Store\)$'
 
 augroup vimrc_vimfiler
 	autocmd!
