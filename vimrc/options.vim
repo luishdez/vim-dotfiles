@@ -7,7 +7,7 @@ set ignorecase
 set smartcase
 "}}}
 " tags {{{
-set tags=.git/tags,./tags,tags
+set tags=.git/tags,../../.git/tags,.hg/tags,./tags,.tags;
 "}}}
 " displaying text {{{
 set scrolloff=3
@@ -21,7 +21,6 @@ set relativenumber
 " syntax, highlighting and spelling {{{
 set nohlsearch
 set nocursorline
-set colorcolumn=80
 set conceallevel=1
 set concealcursor=inc
 "}}}
