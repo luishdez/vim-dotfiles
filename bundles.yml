@@ -20,7 +20,7 @@
     lazy: 1
     autoload:
         on_source:
-            - tobyS/pdv
+            - tobyS/vmustache
 # }}}
 
 # It just works (No need to invoke consciously, just configure.) {{{
@@ -106,7 +106,7 @@
             - Join
 - tommcdo/vim-exchange:
 - scrooloose/syntastic:
-    - ntpeters/vim-better-whitespace:
+- bronson/vim-trailing-whitespace:
 
 ## Completion {{{
 - Shougo/neocomplete:
