@@ -570,11 +570,6 @@
     autoload:
         filetypes:
             - hbs
-- evidens/vim-twig:
-    lazy: 1
-    autoload:
-        filetypes:
-            - twig
 - tpope/vim-jdaddy:
     lazy: 1
     autoload:
