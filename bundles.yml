@@ -16,6 +16,11 @@
     autoload:
         on_source:
             - dash.vim
+- tobyS/vmustache:
+    lazy: 1
+    autoload:
+        on_source:
+            - tobyS/pdv
 # }}}
 
 # It just works (No need to invoke consciously, just configure.) {{{
@@ -101,7 +106,7 @@
             - Join
 - tommcdo/vim-exchange:
 - scrooloose/syntastic:
-- ntpeters/vim-better-whitespace:
+    - ntpeters/vim-better-whitespace:
 
 ## Completion {{{
 - Shougo/neocomplete:
@@ -444,6 +449,11 @@
 
 ## {{{ # PHP
 - shawncplus/phpcomplete.vim:
+    lazy: 1
+    autoload:
+        filetypes:
+            - php
+- tobyS/pdv:
     lazy: 1
     autoload:
         filetypes:
