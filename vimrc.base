@@ -10,6 +10,12 @@ source ~/.vim/vimrc/autocmds.vim
 source ~/.vim/vimrc/mappings.vim
 source ~/.vim/vimrc/highlights.vim
 
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
 source ~/.vim/neobundle.vim
 
 source ~/.vim/vimrc/options.vim
@@ -19,3 +25,5 @@ if !has('vim_starting')
   call neobundle#call_hook('on_source')
   call neobundle#call_hook('on_post_source')
 endif
+
+call neobundle#end()
