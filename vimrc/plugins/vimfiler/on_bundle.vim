@@ -2,7 +2,7 @@ nnoremap <SID>[vimfiler] <Nop>
 nmap <Leader><Space> <SID>[vimfiler]
 
 nnoremap <Leader>n :<C-u>VimFilerExplorer<CR>
-nnoremap <SID>[vimfiler]<Space> :<C-u>VimFiler 
+nnoremap <SID>[vimfiler]<Space> :<C-u>VimFiler
 nnoremap <silent> <SID>[vimfiler]b :<C-u>VimFilerBufferDir<CR>
 nnoremap <silent> <SID>[vimfiler]c :<C-u>VimFilerCurrentDir<CR>
 nnoremap <silent> <SID>[vimfiler]d :<C-u>VimFilerDouble<CR>
