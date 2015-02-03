@@ -20,4 +20,4 @@ function! s:my_vimfiler_settings()
   nmap <buffer> q <Plug>(vimfiler_exit)
   nmap <buffer> Q <Plug>(vimfiler_hide)
   nmap <buffer> <C-h> <Plug>(vimfiler_switch_to_parent_directory)
-	endfunction
+endfunction
