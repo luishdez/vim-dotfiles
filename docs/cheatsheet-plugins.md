@@ -55,11 +55,45 @@ Real time preview of markdown, reStructuredText and textile files.
 
 + show preview `:PrevimOpen`
 
-## Unite
+## [Unite](https://github.com/Shougo/unite.vim)
 
 Unite is a plugin that generate lists from Data sources for anything. List of
 files, list of commands, list of tabs, or your own list/menus. All in normal
 mode.
+
+Command        | Key              | Command
+---            | ---              | ---
+Addbookmark    | `<space>a`       | :UniteBookmarkAdd
+Show Buffers   | `<space>b`       | :Unite -buffer-name=buffer buffer<CR>
+Bookmars       | `<space>B`       | :Unite -buffer-name=bookmark bookmark<CR>
+Compilers      | `<space>c`       | :Unite -buffer-name=compiler compiler<CR>
+Commands       | `<space>C`       | :Unite -buffer-name=command command<CR>
+English        | `<space>e`       | :Unite -buffer-name=english english
+Files          | `<space>f`       | :UniteWithBufferDir -buffer-name=file file<CR>
+File input     | `<space>F`       | :Unite -buffer-name=file -input=" . expand("%:p:r:r:r") . " file<CR>"
+History        | `<space>h`       | :Unite -buffer-name=history history/
+Help           | `<space>H`       | :Unite -buffer-name=help help<CR>
+Location       | `<space>l`       | :Unite -buffer-name=location_list location_list<CR>
+Lines          | `<space>L`       | :Unite -buffer-name=line line<CR>
+Mru            | `<space>m`       | :Unite -buffer-name=mru file_mru<CR>
+Marks          | `<space>M`       | :Unite -buffer-name=mark mark<CR>
+Outlines       | `<space>o`       | :Unite -buffer-name=outline outline<CR>
+Files Async    | `<space>r`       | :Unite -buffer-name=file_rec file_rec/async<CR>
+Quicklearn     | `<space>R`       | :Unite -buffer-name=quicklearn quicklearn -immediately<Cr>
+Snippets       | `<space>s`       | :Unite -buffer-name=snippet snippet<CR>
+Yank History   | `<space>y`       | :Unite -buffer-name=yank history/yank<CR>
+Quickfix       | `<space>q`       | :Unite -buffer-name=quickfix quickfix<CR>
+Close          | `<space>Q`       | :UniteClose<CR>
+Sources        | `<space>`        | :<C-u>Unite -buffer-name=source source<CR>
+Unite Tags     |  `<space>t`      | :<C-u>Unite -buffer-name=tag tag<CR>
+Unite Tag Word | `<space><C-]>`   | :<C-u>UniteWithCursorWord -immediately tag<CR>
+Giti           | `<space>g<Space> | :<C-u>Unite -buffer-name=giti giti<CR>
+Git Branch     | `<space>gb       | :<C-u>Unite -buffer-name=giti giti/branch<CR>
+Git Branch all | `<space>gB       | :<C-u>Unite -buffer-name=giti giti/branch_all<CR>
+Git Config     | `<space>gc       | :<C-u>Unite -buffer-name=giti giti/config<CR>
+Git log        | `<space>gl       | :<C-u>Unite -buffer-name=giti giti/log<CR>
+Git Remote     | `<space>gr       | :<C-u>Unite -buffer-name=giti giti/remote<CR>
+Git Status     | `<space>gs       | :<C-u>Unite -buffer-name=giti giti/status<CR>
 
 ## Tagbar
 
