@@ -653,4 +653,11 @@
             Migemo
 # }}}
 
+# Personal Snippets {{{
+- git@bitbucket.org:wobblecode/uikit-gecko-snippets.git:
+    lazy: 1
+    autoload:
+        on_source: neosnippet
+# }}}
+
 # vim: iskeyword+=/,.,- foldmethod=marker
