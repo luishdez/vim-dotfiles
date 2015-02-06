@@ -79,23 +79,24 @@ Delete always copy so you can paste later
 
 ## Transformations
 
-+ Convert word to uppercase <leader>u
-+ Convert word to lowercase <leader>l
-+ Convert first word char to UPPERCASE <leader>U
-+ Convert first word char to lowercase <leader>L
++ Convert word to uppercase `<leader>u`
++ Convert word to lowercase `<leader>l`
++ Convert first word char to UPPERCASE `<leader>U`
++ Convert first word char to lowercase `<leader>L`
 
 ## Editing
 
-+ Repeate last: .
-+ Undo: u
-+ Redo: ctrl + r
-+ Toggle Check spell: cos
-+ Toggle wrap: cow
-+ Change spell to es,nl and medical lang: set spelllang=en_us,nl,medical
++ Repeate last: `.`
++ Undo: `u`
++ Redo: `<ctrl-r>`
++ Toggle Check spell: `cos`
++ Toggle wrap: `cow`
++ Wrap selection: `gq`
++ Change spell to es,nl and medical lang: `:set spelllang=en_us,nl,medical`
 
 ## Search and Replace
 
-+ Search: /{pattern}
++ Search: `/{pattern}`
 + Find next and prev: n | N
 + Find in project/folder Ack: cmd + shift + f
 + Replace all: :%s/old/new/g
@@ -110,7 +111,7 @@ Delete always copy so you can paste later
 
 ## VIM action
 
-+ Show hide numbers: con
++ Show hide numbers: `con`
 + Showmaps: :nmap | :imap | :vmap | :smap
 
 # Plugins
