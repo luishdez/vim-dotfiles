@@ -38,10 +38,10 @@ typing the combinations
 
 ## Editor windows and buffers :help Ctrl-W
 
-+ Change window pane: ctrl+w w
-+ Resize splits to equal: ctrl+w =
-+ Maximize split horz = ctrl+w __
-+ Maximize split n horz = ctrl+w 10 _
++ Change window pane: `ctrl+w w`
++ Resize splits to equal: `ctrl+w =`
++ Maximize split horz = `ctrl+w __`
++ Maximize split n horz = `ctrl+w 10 _`
 + Maximize split vert = ctrl+w ||
 + Swap top/bottom or left/right split: ctrl+w r
 + Move current window to a new tab: ctrl+w T
@@ -71,11 +71,11 @@ Delete always copy so you can paste later
 
 ## Replace edit
 
-+ Replace char: r
-+ Replace word: rw
-+ Replace line: cc
-+ Swap letters: xp
-+ Swap lines: ddjP
++ Replace char: `r`
++ Replace word: `rw`
++ Replace line: `cc`
++ Swap letters: `xp`
++ Swap lines: `ddjP`
 
 ## Transformations
 
@@ -93,21 +93,22 @@ Delete always copy so you can paste later
 + Toggle wrap: `cow`
 + Wrap selection: `gq`
 + Change spell to es,nl and medical lang: `:set spelllang=en_us,nl,medical`
++ Re-indent all file: `gg=G`
++ Intent current line: `=`
 
 ## Search and Replace
 
 + Search: `/{pattern}`
-+ Find next and prev: n | N
-+ Find in project/folder Ack: cmd + shift + f
-+ Replace all: :%s/old/new/g
-+ Replace with confirm: :%s/old/new/gc
-+ Toggle highlight search: <leader>, OR coh
++ Find next and prev: `n` | `N`
++ Replace all: :`%s/old/new/g`
++ Replace with confirm: `:%s/old/new/gc`
++ Toggle highlight search: `<leader>,` OR `coh`
 
 ## Git
 
 + Find conflicts: <leader>fc OR [n
-+ Pref conflict: [n
-+ Next conflict: ]n
++ Pref conflict: `[n`
++ Next conflict: `]n`
 
 ## VIM action
 
