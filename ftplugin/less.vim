@@ -1,5 +1,6 @@
 setlocal foldmethod=marker
 setlocal foldmarker={,}
+setlocal nofoldenable
 setlocal nowrap
 setlocal tabstop=2
 setlocal shiftwidth=2
