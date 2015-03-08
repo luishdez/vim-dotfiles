@@ -107,7 +107,6 @@
 - tommcdo/vim-exchange:
 - scrooloose/syntastic:
 - junegunn/vim-easy-align:
-- bronson/vim-trailing-whitespace:
 
 ## Completion {{{
 - Shougo/neocomplete:

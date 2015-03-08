@@ -17,10 +17,6 @@ function! s:vimfiler_settings()
 endfunction
 
 function! s:my_vimfiler_settings()
-  autocmd InsertLeave <buffer> match ExtraWhitespace //
-  autocmd InsertEnter <buffer> match ExtraWhitespace //
-  autocmd BufWinEnter <buffer> match ExtraWhitespace //
-
   nmap <buffer> q <Plug>(vimfiler_exit)
   nmap <buffer> Q <Plug>(vimfiler_hide)
   nmap <buffer> <C-h> <Plug>(vimfiler_switch_to_parent_directory)
