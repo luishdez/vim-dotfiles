@@ -515,6 +515,9 @@
     autoload:
         filetypes:
             - html
+            - htmldjango
+            - twig
+            - swig
             - erb
             - haml
             - css
