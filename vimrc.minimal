@@ -7,4 +7,5 @@ set linespace=2
 set background=dark
 set regexpengine=1
 
+autocmd BufReadPre * if getfsize(expand("%")) > 10000000 | syntax off | endif
 command! Custom execute 'source' expand('~/.vimrc')
