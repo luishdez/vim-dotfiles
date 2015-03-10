@@ -34,7 +34,7 @@ endfunction
 " setlocal foldmethod=expr
 " setlocal foldexpr=RubyMethodFold(v:lnum)
 setlocal foldmethod=syntax
-setlocal foldlevel=1
+set nofoldenable
 setlocal nowrap
 
 inoremap <silent> <buffer> <Leader><C-l> <Space>=><Space>
