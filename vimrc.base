@@ -3,6 +3,8 @@ if has('vim_starting')
   execute 'source' expand('~/.vimrc.minimal')
 endif
 
+startinsert
+
 " Below makes vim feature-rich, but heavy
 source ~/.vim/vimrc/functions.vim
 source ~/.vim/vimrc/commands.vim
