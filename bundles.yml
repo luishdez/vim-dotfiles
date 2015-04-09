@@ -11,16 +11,11 @@
     autoload:
         on_source:
             - vim-reload
-- rizzatti/funcoo.vim:
-    lazy: 1
-    autoload:
-        on_source:
-            - dash.vim
 - tobyS/vmustache:
     lazy: 1
     autoload:
         on_source:
-            - tobyS/vmustache
+            - tobyS/pdv
 # }}}
 
 # It just works (No need to invoke consciously, just configure.) {{{
@@ -159,7 +154,6 @@
 # }}}
 
 # Reference {{{
-- rizzatti/dash.vim:
 - thinca/vim-ref:
     lazy: 1
     autoload:
