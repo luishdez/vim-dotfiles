@@ -63,8 +63,8 @@ NeoBundleLocal ~/.vim/bundles/manual
 " Setup bundles {{{
 let s:neobundlefile = expand('~/.vim/bundles.yml')
 let s:neobundlefile_compiled = expand('~/.vim/neobundlefile_compiled.vim')
-if getftime(s:neobundlefile) > getftime(s:neobundlefile_compiled)
-	silent !compile-vimrc
+if getftime(s:neobundlefile) > getftime(s:neobundlefile_compiled) 
+  silent !ruby ~/.vim/compile-vimrc
 endif
 
 execute "source" s:neobundlefile_compiled
