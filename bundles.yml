@@ -510,6 +510,7 @@
         filetypes:
             - html
             - htmldjango
+            - mustache
             - twig
             - swig
             - erb
