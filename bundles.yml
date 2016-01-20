@@ -30,10 +30,10 @@
     autoload:
         insert: 1
 - MarcWeber/vim-addon-local-vimrc:
-- Shougo/vimproc:
-    build:
-        mac: make -f make_mac.mak
-        unix: make -f make_unix.mak
+# - Shougo/vimproc:
+#     build:
+#         mac: make -f make_mac.mak
+#         unix: make -f make_unix.mak
 - vim-scripts/sudo.vim:
 - chrisbra/Recover.vim:
 - tpope/vim-speeddating:
